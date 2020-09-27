@@ -1,0 +1,11 @@
+version: '3.1'
+services:
+  redis:
+    image: redis:5.0-alpine
+    ports:
+      - 6379:6379
+
+  mockbin:
+    image: mashape/mockbin:latest
+    ports:
+      - 8080:8080
