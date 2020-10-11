@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  harbor-nginx:
+    image: nginx:alpine
+    volumes:
+    - ./templates:/etc/nginx/templates
+    ports:
+      - 8080:80
