@@ -4,5 +4,6 @@ services:
     image: nginx:alpine
     volumes:
     - ./templates:/etc/nginx/templates
+    - ./html:/usr/share/nginx/html
     ports:
       - 8080:80
